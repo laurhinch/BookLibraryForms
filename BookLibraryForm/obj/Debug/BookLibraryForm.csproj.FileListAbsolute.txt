@@ -1,0 +1,10 @@
+C:\Users\Lauren Hinchcliffe\source\repos\BookLibraryForm\BookLibraryForm\bin\Debug\BookLibraryForm.exe.config
+C:\Users\Lauren Hinchcliffe\source\repos\BookLibraryForm\BookLibraryForm\bin\Debug\BookLibraryForm.exe
+C:\Users\Lauren Hinchcliffe\source\repos\BookLibraryForm\BookLibraryForm\bin\Debug\BookLibraryForm.pdb
+C:\Users\Lauren Hinchcliffe\source\repos\BookLibraryForm\BookLibraryForm\obj\Debug\BookLibraryForm.csprojAssemblyReference.cache
+C:\Users\Lauren Hinchcliffe\source\repos\BookLibraryForm\BookLibraryForm\obj\Debug\BookLibraryForm.Form1.resources
+C:\Users\Lauren Hinchcliffe\source\repos\BookLibraryForm\BookLibraryForm\obj\Debug\BookLibraryForm.Properties.Resources.resources
+C:\Users\Lauren Hinchcliffe\source\repos\BookLibraryForm\BookLibraryForm\obj\Debug\BookLibraryForm.csproj.GenerateResource.cache
+C:\Users\Lauren Hinchcliffe\source\repos\BookLibraryForm\BookLibraryForm\obj\Debug\BookLibraryForm.exe
+C:\Users\Lauren Hinchcliffe\source\repos\BookLibraryForm\BookLibraryForm\obj\Debug\BookLibraryForm.pdb
+C:\Users\Lauren Hinchcliffe\source\repos\BookLibraryForm\BookLibraryForm\obj\Debug\BookLibraryForm.csproj.CoreCompileInputs.cache
