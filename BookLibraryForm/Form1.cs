@@ -30,6 +30,7 @@ namespace BookLibraryForm
         {
             bookList.RemoveAt(listBox1.SelectedIndex - 1);
             titleBox.Text = "Title...";
+            authorBox.Text = "Author...";
             locationBox.Text = "Location...";
             statusBox.Text = "Status...";
             updateList();
@@ -47,6 +48,7 @@ namespace BookLibraryForm
             } else
             {
                 titleBox.Text = "Title...";
+                authorBox.Text = "Author...";
                 locationBox.Text = "Location...";
                 statusBox.Text = "Status...";
             }
@@ -57,6 +59,7 @@ namespace BookLibraryForm
             if (listBox1.SelectedIndex > 0)
             {
                 bookList[listBox1.SelectedIndex - 1].title = titleBox.Text;
+                bookList[listBox1.SelectedIndex - 1].author = authorBox.Text;
                 bookList[listBox1.SelectedIndex - 1].location = locationBox.Text;
                 bookList[listBox1.SelectedIndex - 1].status = statusBox.Text;
                 listBox1.Items[listBox1.SelectedIndex] = bookList[listBox1.SelectedIndex - 1].toString();
@@ -114,7 +117,7 @@ namespace BookLibraryForm
                             if(fileContent != null)
                             {
                                 string[] data = System.Text.RegularExpressions.Regex.Split(fileContent, @" \| ");
-                                bookList.Add(new Book(data[0], data[1], data[2]));
+                                bookList.Add(new Book(data[0], data[1], data[2], data[3]));
                             } else
                             {
                                 break;
@@ -138,10 +141,13 @@ namespace BookLibraryForm
                     break;
                 }
             }
-            if(!duplicate)
+            if (!duplicate)
             {
-                bookList.Add(new Book(titleBox.Text, locationBox.Text, statusBox.Text));
-                updateList();
+                if (titleBox.Text != "Title..." & authorBox.Text != "Author..." & locationBox.Text != "Location..." &  statusBox.Text != "Status")
+                    {
+                    bookList.Add(new Book(titleBox.Text, authorBox.Text, locationBox.Text, statusBox.Text));
+                    updateList();
+                    }
             }
         }
 
