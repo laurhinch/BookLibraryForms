@@ -18,3 +18,13 @@ C:\Users\kiene\Documents\BookLibraryForms\BookLibraryForm\obj\Debug\BookLibraryF
 C:\Users\kiene\Documents\BookLibraryForms\BookLibraryForm\obj\Debug\BookLibraryForm.csproj.CoreCompileInputs.cache
 C:\Users\kiene\Documents\BookLibraryForms\BookLibraryForm\obj\Debug\BookLibraryForm.exe
 C:\Users\kiene\Documents\BookLibraryForms\BookLibraryForm\obj\Debug\BookLibraryForm.pdb
+C:\Users\Kienen\Documents\BookLibraryForms\BookLibraryForm\bin\Debug\BookLibraryForm.exe.config
+C:\Users\Kienen\Documents\BookLibraryForms\BookLibraryForm\bin\Debug\BookLibraryForm.exe
+C:\Users\Kienen\Documents\BookLibraryForms\BookLibraryForm\bin\Debug\BookLibraryForm.pdb
+C:\Users\Kienen\Documents\BookLibraryForms\BookLibraryForm\obj\Debug\BookLibraryForm.csprojAssemblyReference.cache
+C:\Users\Kienen\Documents\BookLibraryForms\BookLibraryForm\obj\Debug\BookLibraryForm.Form1.resources
+C:\Users\Kienen\Documents\BookLibraryForms\BookLibraryForm\obj\Debug\BookLibraryForm.Properties.Resources.resources
+C:\Users\Kienen\Documents\BookLibraryForms\BookLibraryForm\obj\Debug\BookLibraryForm.csproj.GenerateResource.cache
+C:\Users\Kienen\Documents\BookLibraryForms\BookLibraryForm\obj\Debug\BookLibraryForm.csproj.CoreCompileInputs.cache
+C:\Users\Kienen\Documents\BookLibraryForms\BookLibraryForm\obj\Debug\BookLibraryForm.exe
+C:\Users\Kienen\Documents\BookLibraryForms\BookLibraryForm\obj\Debug\BookLibraryForm.pdb

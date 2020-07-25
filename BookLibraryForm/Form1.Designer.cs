@@ -42,6 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.authorBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // listBox1
@@ -180,11 +181,22 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Author:";
             // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(496, 33);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(616, 97);
+            this.listView1.TabIndex = 14;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 487);
+            this.ClientSize = new System.Drawing.Size(1179, 487);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.authorBox);
             this.Controls.Add(this.label3);
@@ -201,7 +213,7 @@
             this.Controls.Add(this.listBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.Text = "MYBooks";
+            this.Text = "Book Library";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,6 +235,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox authorBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 

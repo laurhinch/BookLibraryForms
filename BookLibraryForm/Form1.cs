@@ -2,27 +2,46 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.IO;
+using System.Net.Http.Headers;
+using System.Diagnostics;
 
 namespace BookLibraryForm
 {
     public partial class Form1 : Form
     {
         public List<Book> bookList = new List<Book>();
+
         public Form1()
         {
             InitializeComponent();
-            listBox1.Items.Add("Add...");
-            listBox1.SelectedIndex = 0;
+            ListViewSetup();
             updateList();
+        }
+
+        public void ListViewSetup()
+        {
+            listView1.Columns.Add("Title", 200);
+            listView1.Columns.Add("Author", 150);
+            listView1.Columns.Add("Location", 100);
+            listView1.Columns.Add("Status", 100);
+
         }
 
         public void updateList()
         {
-            listBox1.Items.Clear();
-            listBox1.Items.Add("Add...");
+            listView1.Items.Clear();
             foreach (Book T in bookList)
             {
-                listBox1.Items.Add(T.toString());
+                /*ListViewItem bookItem = new ListViewItem();
+                bookItem.SubItems.Add(T.title);
+                bookItem.SubItems.Add(T.author);
+                bookItem.SubItems.Add(T.status);
+                bookItem.SubItems.Add(T.location);
+                listView1.Items.Add(bookItem);*/
+                string[] bookItem = { T.title, T.author, T.location, T.status };
+                var listViewItem = new ListViewItem(bookItem);
+                listView1.Items.Add(listViewItem);
+
             }
         }
 
@@ -58,6 +77,7 @@ namespace BookLibraryForm
         {
             if (listBox1.SelectedIndex > 0)
             {
+
                 bookList[listBox1.SelectedIndex - 1].title = titleBox.Text;
                 bookList[listBox1.SelectedIndex - 1].author = authorBox.Text;
                 bookList[listBox1.SelectedIndex - 1].location = locationBox.Text;
@@ -143,7 +163,7 @@ namespace BookLibraryForm
             }
             if (!duplicate)
             {
-                if (titleBox.Text != "Title..." & authorBox.Text != "Author..." & locationBox.Text != "Location..." &  statusBox.Text != "Status")
+                if (!(titleBox.Text == "Title..." && authorBox.Text == "Author..." && locationBox.Text == "Location..." &&  statusBox.Text == "Status..."))
                     {
                     bookList.Add(new Book(titleBox.Text, authorBox.Text, locationBox.Text, statusBox.Text));
                     updateList();
